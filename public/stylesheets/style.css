@@ -10,24 +10,30 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background-color: #161542 !important;
+    background-color: #161542;
     padding: 15px 0;
 }
 
 .navbar-brand {
-    color: #ffffff !important;
+    color: #ffffff;
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #FFDA85;
 }
 
 .navbar .nav-link {
-    color: #ffffff !important;
+    color: #ffffff;
     margin-left: 15px;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-    color: #FFDA85 !important;
+    color: #FFDA85;
 }
 
 /* Main Content */
