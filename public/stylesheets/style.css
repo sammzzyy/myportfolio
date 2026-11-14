@@ -1,8 +1,144 @@
+/* General Page Styling */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-a {
-  color: #00B7FF;
+/* Navigation Bar */
+.navbar {
+    background-color: #161542 !important;
+    padding: 15px 0;
 }
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #FFDA85 !important;
+}
+
+/* Main Content */
+main {
+    min-height: 75vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h1, h2, h3, h4 {
+    color: #161542;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+/* Links */
+a {
+    color: #295C6C;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #BA79B7;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #161542;
+    border-color: #161542;
+}
+
+.btn-primary:hover {
+    background-color: #295C6C;
+    border-color: #295C6C;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #161542;
+    font-weight: bold;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Forms */
+.form-control {
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #295C6C;
+    box-shadow: 0 0 0 0.2rem rgba(41, 92, 108, 0.15);
+}
+
+/* Footer */
+footer {
+    background-color: #161542;
+    color: #ffffff;
+    padding: 25px 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #FFDA85;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    main {
+        padding: 25px 15px;
+    }
+
+    .navbar .nav-link {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
